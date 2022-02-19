@@ -1,0 +1,5 @@
+name: Partner
+descriotion: Custom Form for adding partners.
+package: Was
+type: module
+core: 8.x

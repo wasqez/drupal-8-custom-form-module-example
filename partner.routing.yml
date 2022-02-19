@@ -1,0 +1,15 @@
+partner.content:
+    path: '/list/partners'
+    defaults:
+        _controller: '\Drupal\partner\Controller\PartnerController::partnersList'
+        _title: 'Partner'
+    requirements:
+        _permission: 'TRUE'
+
+partner.addform:
+    path: '/add/partners'
+    defaults:
+        _form: '\Drupal\partner\Form\AddForm'
+        _title: 'Add Partner'
+    requirements:
+        _permission: 'TRUE'

@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Database\Database;
+ 
+/**
+ * Implements hook_schema().
+ */
+function partners_schema(){
+    $schema['partners'] = array(
+        'description' => 'The table for storing the Partners data.',
+        'fields' => array(
+            'fname' => array(
+                'description' => 'Partners name',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

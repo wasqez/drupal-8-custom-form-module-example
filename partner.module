@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Implementing our hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function partner_theme($existing, $type, $theme, $path) {
+
+  return [
+    'partners_list' => [
+      'variables' => ['partners' => [], 'title' => ''],
+    ],
+	'partners_add_form' => [
+      'render element' => 'form'
+    ],
+  ];
+}
